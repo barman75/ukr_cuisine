@@ -1,0 +1,33 @@
+Recipe_UA = {
+
+Prepare Meat Bouillon = "Підготувати м'ясний бульйон",
+Prepare Fat Bouillon = "Підготувати жирний бульйон"
+Prepare Bone Bouillon = "Підготувати бульйон з кісток",
+
+Prepare Zasmazhka = "Підготувати засмажку на олії",
+Prepare Zasmazhka with Bacon = "Підготувати засмажку на салі",
+Prepare Onion Bacon Zasmazhka = "Підготувати засмажку з цибулею",
+
+Prepare Shkvarki = "Підготувати шкварки",
+
+Prepare Simple Borsch = "Підготувати простий борщ",
+Prepare Vegan Borsch = "Підготувати пісний борщ",
+Prepare Fat Borsch = "Підготувати борщ з м'ясом та салом",
+Prepare Crimean Borsch = "Приготувати кримський борщ",
+
+Make Potato with Shkvarki = "Смажити картоплю на шкварках",
+Make Potato with Onion = "Смажити картоплю з цибулею",
+Make Potato with Onion and Bacon = "Смажити картоплю на шкварках з цибулею",
+
+Make Vareniki with Potato = "Наліпити вареників з картоплею",
+Make Vareniki with Cherry = "Наліпити вареників з вишнями",
+Make Vareniki with Cheese = "Наліпити вареників з сиром",
+
+Prepare Pot of Uzvar = "Підготувати фрукти на узвар",
+
+Prepare Bograch = "Приготувати бограч",
+Prepare Simple Banosh = "Приготувати простий банош",
+
+Prepare Farmers omelette = "Приготувати яєчню по-селянськи",
+
+}

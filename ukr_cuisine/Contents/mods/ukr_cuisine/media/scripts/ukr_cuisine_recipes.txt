@@ -1,0 +1,1668 @@
+module ukr_cuisine
+{
+  imports
+  {
+    Base
+  }
+
+---------  Magazines
+item UkrCuisineMagazine01
+	{
+	Weight = 0.1,
+	Type = Literature,
+	DisplayName = Ukrainian Cuisine Vol.1,
+	Icon = ukr_foodmagazine_01,
+	TeachedRecipes = Prepare Onion Bacon Zasmazhka;Prepare Shkvarki;Make Potato with Shkvarki;Make Potato with Onion;Make Potato with Onion and Bacon,
+	ReplaceOnUse = UkrCuisineMagazine01,
+	DisplayCategory = SkillBook,
+	}
+item UkrCuisineMagazine02
+	{
+	Weight = 0.1,
+	Type = Literature,
+	DisplayName = Ukrainian Cuisine Vol.2,
+	Icon = ukr_foodmagazine_01,
+	TeachedRecipes = Prepare Fat Borsch;Prepare Vegan Borsch;Prepare Simple Borsch;Prepare Crimean Borsch;Prepare Zasmazhka;Prepare Zasmazhka with Bacon;Prepare Crimean Borsch,
+	ReplaceOnUse = UkrCuisineMagazine02,
+	DisplayCategory = SkillBook,
+	}
+item UkrCuisineMagazine03
+	{
+	Weight = 0.1,
+	Type = Literature,
+	DisplayName = Ukrainian Cuisine Vol.3,
+	Icon = ukr_foodmagazine_01,
+	TeachedRecipes = Make Vareniki with Potato;Make Vareniki with Cherry;Make Vareniki with Cheese,
+	ReplaceOnUse = UkrCuisineMagazine03,
+	DisplayCategory = SkillBook,
+	}
+item UkrCuisineMagazine04
+	{
+	Weight = 0.1,
+	Type = Literature,
+	DisplayName = Ukrainian Cuisine Vol.4,
+	Icon = ukr_foodmagazine_01,
+	TeachedRecipes = Prepare Bograch;Prepare Pot of Uzvar,
+	ReplaceOnUse = UkrCuisineMagazine04,
+	DisplayCategory = SkillBook,
+	}
+
+
+---------  Bouillon
+
+recipe Prepare Meat Bouillon
+  {
+	Smallbirdmeat/Smallanimalmeat/Rabbitmeat,
+	destroy WaterPot,
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Result:UkrPotWithMeatWater,
+	Time:20.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+recipe Prepare Fat Bouillon
+  {
+	PorkChop/MuttonChop/HCDuckmeat/HCGoosemeat/HCTurkeymeat,
+	destroy WaterPot,
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Result:UkrPotWithFatMeatWater,
+	Time:20.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+recipe Prepare Bone Bouillon
+  {
+	HCCowbones2/HCCowbones/HCPigbones/HCSheepbones/HCDeerbones/HCDeerbones2,
+	destroy WaterPot,
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Result:UkrPotWithBoneWater,
+	Time:20.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }  
+
+item UkrPotWithMeatWater
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Pot with Meat and Water,
+	//Tooltip = Tooltip_NeedToBeCooked,
+	Icon = Pot,
+	Weight = 3,
+	Calories = 500,
+	DaysFresh = 2,
+	DaysTotallyRotten = 3,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pot,
+	ThirstChange = -30,
+	HungerChange = -10,
+	UnhappyChange = +10,
+	StressChange = +10,
+	BoredomChange = +10,
+	FatigueChange = -10,
+	ReplaceOnUse = Pot,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	DangerousUncooked = TRUE,
+	MinutesToCook = 20,
+	MinutesToBurn = 200,
+	ReplaceOnCooked	= ukr_cuisine.UkrPotMeatBouillonCooked,
+	}
+
+item UkrPotWithFatMeatWater
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Pot with Fat Meat and Water,
+	//Tooltip = Tooltip_NeedToBeCooked,
+	Icon = Pot,
+	Weight = 3,
+	Calories = 600,
+	DaysFresh = 2,
+	DaysTotallyRotten = 3,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pot,
+	ThirstChange = -30,
+	HungerChange = -15,
+	UnhappyChange = +20,
+	StressChange = +10,
+	BoredomChange = +10,
+	FatigueChange = -10,
+	ReplaceOnUse = Pot,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	DangerousUncooked = TRUE,
+	MinutesToCook = 20,
+	MinutesToBurn = 200,
+	ReplaceOnCooked	= ukr_cuisine.UkrPotFatMeatBouillonCooked,
+	}
+
+item UkrPotWithBoneWater
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Pot with Bone and Water,
+	//Tooltip = Tooltip_NeedToBeCooked,
+	Icon = Pot,
+	Weight = 3,
+	Calories = 600,
+	DaysFresh = 2,
+	DaysTotallyRotten = 3,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pot,
+	ThirstChange = -30,
+	HungerChange = -15,
+	UnhappyChange = +10,
+	StressChange = +10,
+	BoredomChange = +10,
+	FatigueChange = -10,
+	ReplaceOnUse = Pot,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	DangerousUncooked = TRUE,
+	MinutesToCook = 20,
+	MinutesToBurn = 200,
+	ReplaceOnCooked	= ukr_cuisine.UkrPotBoneBouillonCooked,
+	}
+
+item UkrPotMeatBouillonCooked
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Pot with Buillon (Cooked),
+	Icon = Pot,
+	Weight	= 3,
+	Calories = 500,
+	DaysFresh = 2,
+	DaysTotallyRotten = 3,
+	EatType	= 2hand,
+	GoodHot	= true,
+	IsCookable = false,
+	ThirstChange = -40,
+	HungerChange = -15,
+	UnhappyChange = -30,
+	StressChange = -40,
+	BoredomChange = -20,
+	FatigueChange = -10,
+	//IsCookable = true,
+	//MinutesToBurn = 300,
+	ReplaceOnUse = Pot,
+	}
+
+item UkrPotFatMeatBouillonCooked
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Pot with Buillon (Cooked),
+	Icon = Pot,
+	Weight	= 3,
+	Calories = 600,
+	DaysFresh = 2,
+	DaysTotallyRotten = 3,
+	EatType	= 2hand,
+	GoodHot	= true,
+	//IsCookable = false,
+	ThirstChange = -40,
+	HungerChange = -15,
+	UnhappyChange = -20,
+	StressChange = -20,
+	BoredomChange = -20,
+	FatigueChange = -10,
+	ReplaceOnUse = Pot,
+	//IsCookable = true,
+	//MinutesToBurn = 400,
+	}
+
+item UkrPotBoneBouillonCooked
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Pot with Bone Buillon (Cooked),
+	Icon = Pot,
+	Weight	= 3,
+	//Carbohydrates = 112,
+	//Proteins = 100,
+	//Lipids = 250,
+	Calories = 600,
+	DaysFresh = 2,
+	DaysTotallyRotten = 3,
+	EatType	= 2hand,
+	GoodHot	= true,
+	//IsCookable = false,
+	ThirstChange = -40,
+	HungerChange = -15,
+	UnhappyChange = -20,
+	StressChange = -20,
+	BoredomChange = -20,
+	FatigueChange = -10,
+	ReplaceOnUse = Pot,
+	//IsCookable = true,
+	//MinutesToBurn = 400,
+	}
+
+---------  Zasmazhka
+
+recipe Prepare Zasmazhka
+  {
+	Onion/OnionRings,
+	Carrots/CannedCarrotsOpen,
+	Tomato/TomatoPaste/CannedTomatoOpen,
+	OilVegetable/HCCookingoil/OilOlive/HCCookingoiljar/HCPlasticcanvegoil,
+	HCBeet,
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	destroy Pan,
+	Result:UkrPanWithZasmazhka,
+	Time:10.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+recipe Prepare Zasmazhka with Bacon
+  {
+	Onion/OnionRings,
+	Carrots/CannedCarrotsOpen,
+	Tomato/TomatoPaste/CannedTomatoOpen,
+	Lard/Bacon/BaconBits/BaconRashers,
+	HCBeet,
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	destroy Pan,
+	Result:UkrPanWithLardZasmazhka,
+	Time:10.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+recipe Prepare Onion Bacon Zasmazhka
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Lard/Bacon/BaconBits/BaconRashers,
+	Onion/OnionRings,
+	destroy Pan,
+	Result:UkrPanWithOnionBaconZasmazhka,
+	Time:10.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+item UkrPanWithZasmazhka
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Zasmazhka (Uncooked),
+	Icon = Pan,
+	Weight = 1,
+	Calories = 200,
+	DaysFresh = 3,
+	DaysTotallyRotten = 5,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pan,
+	ThirstChange = -0,
+	HungerChange = -15,
+	UnhappyChange = +10,
+	StressChange	= +10,
+	BoredomChange 	= +10,
+	FatigueChange 	= -10,
+	ReplaceOnUse = Pan,
+	WorldStaticModel = Ratatouille_Ground,
+	StaticModel = H_Ratatouille,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 40,
+	MinutesToBurn = 80,
+	ReplaceOnCooked	= ukr_cuisine.UkrPanWithZasmazhkaCooked,
+	}
+
+item UkrPanWithLardZasmazhka
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Zasmazhka with lard (Uncooked),
+	Icon = Pan,
+	Weight = 1,
+	Calories = 200,
+	DaysFresh = 3,
+	DaysTotallyRotten = 5,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pan,
+	ThirstChange = -0,
+	HungerChange = -15,
+	UnhappyChange = +10,
+	StressChange	= +10,
+	BoredomChange 	= +10,
+	FatigueChange 	= -10,
+	ReplaceOnUse = Pan,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 40,
+	MinutesToBurn = 80,
+	ReplaceOnCooked	= ukr_cuisine.UkrPanWithLardZasmazhkaCooked,
+	}
+
+item UkrPanWithOnionBaconZasmazhka
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Zasmazhka onion (Uncooked),
+	Icon = Pan,
+	Weight = 1,
+	Calories = 200,
+	DaysFresh = 3,
+	DaysTotallyRotten = 5,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pan,
+	ThirstChange = -0,
+	HungerChange = -15,
+	UnhappyChange = +10,
+	StressChange = +10,
+	BoredomChange = +10,
+	FatigueChange = -10,
+	ReplaceOnUse = Pan,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 40,
+	MinutesToBurn = 80,
+	ReplaceOnCooked	= ukr_cuisine.UkrPanWithOnionBaconZasmazhkaCooked,
+	}
+
+item UkrPanWithOnionBaconZasmazhkaCooked
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Zasmazhka Onion (Cooked),
+	Icon = Pan,
+	Weight = 1,
+	Calories = 200,
+	DaysFresh = 3,
+	DaysTotallyRotten = 5,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pan,
+	ThirstChange = -0,
+	HungerChange = -15,
+	UnhappyChange = -10,
+	StressChange	= -10,
+	BoredomChange 	= -10,
+	FatigueChange 	= -10,
+	ReplaceOnUse = Pan,
+	CookingSound = FryingFood,
+}
+
+item UkrPanWithZasmazhkaCooked
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Zasmazhka (Cooked),
+	Icon 	= Pan,
+	Weight	= 1,
+	Calories = 200,
+	DaysFresh = 3,
+	DaysTotallyRotten = 5,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pan,
+	ThirstChange = 0,
+	HungerChange = -15,
+	UnhappyChange = -10,
+	StressChange	= 0,
+	BoredomChange 	= -10,
+	FatigueChange 	= -10,
+	ReplaceOnUse = Pan,
+	}
+
+item UkrPanWithLardZasmazhkaCooked
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Zasmazhka with lard (Cooked),
+	Icon 	= Pan,
+	Weight	= 1,
+	Calories = 400,
+	DaysFresh = 3,
+	DaysTotallyRotten = 5,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pan,
+	ThirstChange = 0,
+	HungerChange = -15,
+	UnhappyChange = -10,
+	StressChange	= 0,
+	BoredomChange 	= -10,
+	FatigueChange 	= -10,
+	ReplaceOnUse = Pan,
+	}
+
+---------  Shkvarki
+
+recipe Prepare Shkvarki
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	BaconBits/BaconRashers,
+	destroy Pan,
+	Result:UkrPanWithShkvarki,
+	Time:10.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	//Heat: -0.22,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+item UkrPanWithShkvarki
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Shkvarki (Uncooked),
+	Icon 	= Pan,
+	Weight	= 0.3,
+	//Carbohydrates = 50,
+	//Proteins = 25,
+	//Lipids = 200,
+	Calories = 400,
+	DaysFresh = 3,
+	DaysTotallyRotten = 5,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pan,
+	ThirstChange = -0,
+	HungerChange = -15,
+	UnhappyChange = +10,
+	StressChange	= +20,
+	BoredomChange 	= +10,
+	FatigueChange 	= -10,
+	ReplaceOnUse = Pan,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 40,
+	MinutesToBurn = 80,
+	ReplaceOnCooked	= ukr_cuisine.UkrPanWithShkvarkiCooked,
+	}
+item UkrPanWithShkvarkiCooked
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Shkvarki (Cooked),
+	Icon 	= Pan,
+	Weight	= 0.3,
+	//Carbohydrates = 50,
+	//Proteins = 25,
+	//Lipids = 200,
+	Calories = 400,
+	DaysFresh = 3,
+	DaysTotallyRotten = 5,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pan,
+	ThirstChange = -0,
+	HungerChange = -15,
+	UnhappyChange = -10,
+	StressChange	= -30,
+	BoredomChange 	= -10,
+	FatigueChange 	= -10,
+	ReplaceOnUse = Pan,
+	}
+
+
+
+---------  Borsch
+
+recipe Prepare Simple Borsch
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Cabbage,
+	Potato,
+	UkrPanWithZasmazhkaCooked,
+	UkrPotMeatBouillonCooked/UkrPotBoneBouillonCooked,
+	Salt,
+	Result:UkrPotWithSimpleborsch,
+	Time:10.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+recipe Prepare Vegan Borsch
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Cabbage,
+	destroy WaterPot,
+	Potato/CannedPotatoOpen,
+	OpenBeans,
+	UkrPanWithZasmazhkaCooked,
+	Salt,
+	Result:UkrPotWithVeganborsch,
+	Time:10.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+recipe Prepare Fat Borsch
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Cabbage,
+	Potato/CannedPotatoOpen,
+	UkrPanWithLardZasmazhkaCooked,
+	UkrPotMeatBouillonCooked,
+	Salt,
+	Result:UkrPotWithLardborsch,
+	Time:10.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+recipe Prepare Crimean Borsch
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	MuttonChop,
+	Onion,
+	HCChilipepper,
+	Tomato/TomatoPaste,
+	Corn,
+	HCBeet,
+	Carrots/CannedCarrotsOpen,
+	Cabbage,
+	Potato/CannedPotatoOpen,
+	Salt,
+	Result:UkrPotWithCrimeanborsch,
+	Time:10.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+item UkrPotWithSimpleborsch
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Simple Ukrainian Borsch (Uncooked),
+	Icon = Pot,
+	Calories = 660,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -30,
+	ThirstChange = -30,
+	UnhappyChange = -10,
+	StressChange = 0,
+	BoredomChange = -10,
+	FatigueChange = -10,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 200,
+	ReplaceOnCooked	= ukr_cuisine.UkrPotWithSimpleborschCooked
+	}
+
+item UkrPotWithVeganborsch
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Vegan Ukrainian Borsch (Uncooked),
+	Icon = Pot,
+	Calories = 220,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -20,
+	ThirstChange = -30,
+	UnhappyChange = -5,
+	StressChange = 0,
+	BoredomChange = -10,
+	FatigueChange = -10,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 200,
+	ReplaceOnCooked	= ukr_cuisine.UkrPotWithVeganborschCooked
+	}	
+
+item UkrPotWithLardborsch
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Fat Ukrainian Borsch (Uncooked),
+	Icon = Pot,
+	Calories = 660,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -40,
+	ThirstChange = -30,
+	UnhappyChange = -15,
+	StressChange = 0,
+	BoredomChange = -10,
+	FatigueChange = -10,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 200,
+	ReplaceOnCooked	= ukr_cuisine.UkrPotWithLardborschCooked
+	}
+
+item UkrPotWithCrimeanborsch
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Crimean Borsch (Uncooked),
+	Icon = Pot,
+	Calories = 660,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -30,
+	ThirstChange = -20,
+	UnhappyChange = -5,
+	StressChange = 0,
+	BoredomChange = -10,
+	FatigueChange = -5,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 60,
+	MinutesToBurn = 200,
+	//ReplaceOnCooked	= ukr_cuisine.UkrPotWithCrimeanborschCooked
+	}
+
+item UkrPotWithSimpleborschCooked
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Simple Ukrainian Borsch (Cooked),
+	Icon = Pot,
+	Calories = 880,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 4,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -80,
+	ThirstChange = -60,
+	UnhappyChange = -60,
+	StressChange = -60,
+	BoredomChange = -30,
+	FatigueChange = -30,
+	}
+
+item UkrPotWithVeganborschCooked
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Vegan Ukrainian Borsch (Cooked),
+	Icon = Pot,
+	Calories = 880,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 4,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -80,
+	ThirstChange = -60,
+	UnhappyChange = -60,
+	StressChange = -60,
+	BoredomChange = -30,
+	FatigueChange = -30,
+	}
+
+item UkrPotWithLardborschCooked
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Fat Ukrainian Borsch (Cooked),
+	Icon = Pot,
+	Calories = 880,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 4,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -80,
+	ThirstChange = -60,
+	UnhappyChange = -60,
+	StressChange = -60,
+	BoredomChange = -30,
+	FatigueChange = -30,
+	}
+
+---------  Potato
+
+recipe Make Potato with Shkvarki
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Potato/CannedPotatoOpen,
+	UkrPanWithShkvarkiCooked,
+	Salt,
+	Result:UkrPotatoWithShkvarki,
+	Time:15.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking15,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+recipe Make Potato with Onion
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Potato/CannedPotatoOpen,
+	Onion/OnionRings,
+	OilVegetable/HCCookingoil/OilOlive/HCCookingoiljar/HCPlasticcanvegoil,
+	Salt,
+	Result:UkrPotatoWithOnion,
+	Time:15.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking15,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+recipe Make Potato with Onion and Bacon
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	Potato/CannedPotatoOpen,
+	Onion/OnionRings,
+	UkrPanWithShkvarkiCooked,
+	Salt,
+	Result:UkrPotatoWithShkvarki,
+	Time:15.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking15,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+item UkrPotatoWithShkvarki
+	{
+	DisplayCategory = Food,
+	Weight 	= 1,
+	Type = Food,
+	DisplayName = Potato with Shkvarki,
+	Icon = Pan,
+	//Carbohydrates = 200,
+	//Proteins = 20,
+	//Lipids = 30,
+	Calories = 660,
+	ReplaceOnUse = Pan,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -40,
+	UnhappyChange = -10,
+	StressChange = -5,
+	BoredomChange = -5,
+	FatigueChange = -5,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 60,
+	//ReplaceOnCooked	= ukr_cuisine.UkrPotWithShkvarki
+	}
+
+item UkrPotatoWithOnion
+	{
+	DisplayCategory = Food,
+	Weight 	= 1,
+	Type = Food,
+	DisplayName = Potato with Onion,
+	Icon = Pan,
+	Calories = 660,
+	ReplaceOnUse = Pan,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -40,
+	UnhappyChange = -15,
+	StressChange = -5,
+	BoredomChange = -5,
+	FatigueChange = -10,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 60,
+	//ReplaceOnCooked	= ukr_cuisine.UkrPotWithShkvarki
+	}
+
+
+---------  Vareniki
+
+recipe Make Vareniki with Potato
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	DoughRolled,
+	WaterPot,
+	HCMashedpotatoscreamybowl/HCMashedpotatosplainbowl/HCMashedpotatoscreamy/HCMashedpotatosplain/HCPotofpotatomash/HCPotofpotatomashcooked,
+	Result:UkrVarenikiPotato,
+	Time:30.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking15,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+recipe Make Vareniki with Cherry
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	DoughRolled,
+	WaterPot,
+	Cherry/HCCannedpiefillingcherry,
+	Result:UkrVarenikiCherry,
+	Time:30.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking15,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+recipe Make Vareniki with Cheese
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	DoughRolled,
+	WaterPot,
+	HCCheesecurd/HCCurdcubed/HCCurdkneaded,
+	Result:UkrVarenikiCheese,
+	Time:30.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking15,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+	}
+
+item UkrVarenikiPotato
+	{
+	DisplayCategory = Food,
+	Weight 	= 1,
+	Type = Food,
+	DisplayName = Vareniki with Potato,
+	Icon = Pot,
+	Calories = 400,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -20,
+	ThirstChange = -30,
+	UnhappyChange = -10,
+	StressChange = -10,
+	BoredomChange = -5,
+	FatigueChange = -5,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 200,
+	//ReplaceOnCooked	= ukr_food.UkrPotWithSimpleborschCooked
+	}	
+item UkrVarenikiCherry
+	{
+	DisplayCategory = Food,
+	Weight 	= 1,
+	Type = Food,
+	DisplayName = Vareniki with Cherry,
+	Icon = Pot,
+	Calories = 300,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -20,
+	ThirstChange = -30,
+	UnhappyChange = -10,
+	StressChange = -10,
+	BoredomChange = -5,
+	FatigueChange = -5,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 200,
+	//ReplaceOnCooked	= ukr_food.UkrPotWithSimpleborschCooked
+	}
+item UkrVarenikiCheese
+	{
+	DisplayCategory = Food,
+	Weight 	= 1,
+	Type = Food,
+	DisplayName = Vareniki with Cheese,
+	Icon = Pot,
+	Calories = 300,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -20,
+	ThirstChange = -30,
+	UnhappyChange = -10,
+	StressChange = -10,
+	BoredomChange = -5,
+	FatigueChange = -5,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 200,
+	//ReplaceOnCooked	= ukr_food.UkrPotWithSimpleborschCooked
+	}	
+
+
+---------  Galushki
+
+
+---------  Bograch
+recipe Prepare Bograch
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	UkrPanWithOnionBaconZasmazhkaCooked,
+	PorkChop/MuttonChop/HCDuckmeat/HCGoosemeat/HCTurkeymeat,
+	Potato,
+	Carrots/CannedCarrotsOpen,
+	BellPepper/HCBellpeppergreen/HCBellpepperyellow,
+	Salt,
+	Pepper,
+	WaterPot,
+	TomatoPaste/Tomato/CannedTomatoOpen,
+	Result:UkrPotWithSimpleBograch,
+	Time:10.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+
+item UkrPotWithSimpleBograch
+	{
+	DisplayCategory = Food,
+	Type = Food,
+	DisplayName = Pot with Bograch,
+	Tooltip = Tooltip_NeedToBeCooked,
+	Icon = Pot,
+	Weight = 3,
+	Calories = 500,
+	DaysFresh = 2,
+	DaysTotallyRotten = 3,
+	EatType	= 2hand,
+	GoodHot	= true,
+	WorldStaticModel = Pot,
+	ThirstChange = -20,
+	HungerChange = -40,
+	UnhappyChange = -10,
+	StressChange = -20,
+	BoredomChange = -10,
+	FatigueChange = -10,
+	ReplaceOnUse = Pot,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 200,
+	}
+
+---------  Banosh
+recipe Prepare Simple Banosh
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	destroy WaterPot,
+	Cornflour,
+	HCSourcream,
+	UkrPanWithOnionBaconZasmazhkaCooked,
+	Result:UkrPotWithBanosh,
+	Time:15.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+item UkrPotWithBanosh
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Simple Banosh,
+	Icon = Pot,
+	Calories = 50,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 4,
+	DaysTotallyRotten = 8,
+	GoodHot	= true,
+	HungerChange = -50,
+	ThirstChange = -5,
+	UnhappyChange = -15,
+	StressChange = -10,
+	BoredomChange = -5,
+	FatigueChange = -5,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 60,
+	MinutesToBurn = 200,
+	//ReplaceOnCooked	= ukr_cuisine.UkrPotWithUzvarCooked
+}
+
+---------  Nalysnyki
+
+---------  Kruchenyki
+
+---------  Kholodets
+
+---------  Uzvar
+
+recipe Prepare Pot of Uzvar
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	destroy WaterPot,
+	Cherry/CannedFruitCocktailOpen/CannedPeachesOpen,
+	Apple/HCDriedapple/HCApricot/HCDriedfruit/HCMREmealsideprepedB,
+	Honey/HCHoney/Sugar/SugarBrown/HCSugarcubes,
+	Pear/HCPlum/HCPear,
+	Strawberry/BerryBlue/BerryBlack/BerryGeneric1/BerryGeneric2/BerryGeneric3/BerryGeneric4/BerryGeneric5/HCDriedberries/HCCrowberry/HCCranberry/HCHuckleberry,
+	Result:UkrPotWithUzvar,
+	Time:15.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+item UkrPotWithUzvar
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Vareniki with Cherry,
+	Icon = Pot,
+	Calories = 50,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 4,
+	DaysTotallyRotten = 8,
+	GoodHot	= true,
+	HungerChange = -0,
+	ThirstChange = -50,
+	UnhappyChange = -15,
+	StressChange = -10,
+	BoredomChange = -5,
+	FatigueChange = -5,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 60,
+	MinutesToBurn = 200,
+	ReplaceOnCooked	= ukr_cuisine.UkrPotWithUzvarCooked
+}
+item UkrPotWithUzvarCooked
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Vareniki with Cherry,
+	Icon = Pot,
+	Calories = 50,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 4,
+	DaysTotallyRotten = 8,
+	GoodHot	= true,
+	HungerChange = -5,
+	ThirstChange = -60,
+	UnhappyChange = -30,
+	StressChange = -50,
+	BoredomChange = -5,
+	FatigueChange = -20,
+	CookingSound = FryingFood,
+	//IsCookable = true,
+	//MinutesToCook = 60,
+	//MinutesToBurn = 200,
+}
+
+---------  Yayechnya
+
+recipe Prepare Farmers omelette
+  {
+	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+	destroy Pan,
+	Lard/Bacon/BaconBits/BaconRashers,
+	Onion/OnionRings,
+	Tomato/HCTomatocherry/CannedTomatoOpen/HCSlicedtomato/HCDriedtomato,
+	Peas/CannedPeasOpen,
+	Egg/WildEggs/HCGooseegg/HCChickenegg/HCSparrowegg/HCTurkeyegg,
+	Result:UkrFarmersOmelette,
+	Time:15.0,
+	Category:Cooking,
+	OnGiveXP:Recipe.OnGiveXP.Cooking10,
+	SkillRequired:Cooking=0,
+	NeedToBeLearn: false,
+	CanBeDoneFromFloor: true,
+  }
+item UkrFarmersOmelette
+	{
+	DisplayCategory = Food,
+	Weight 	= 1,
+	Type = Food,
+	DisplayName = Farmers omelette,
+	Icon = Pan,
+	Calories = 300,
+	ReplaceOnUse = Pan,
+	DaysFresh 	= 2,
+	DaysTotallyRotten = 3,
+	GoodHot	= true,
+	HungerChange = -30,
+	UnhappyChange = -20,
+	StressChange = -20,
+	BoredomChange = -5,
+	FatigueChange = -20,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 50,
+}
+
+---------  Rulka
+
+
+---------  Commercial Beverages
+
+	item zhivchik_can_full_300
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Zhivchik Apple 0.3l,
+		Icon = zhivchik_can_300,
+		Weight = 0.3,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -20,
+		EnduranceChange = 20,
+		ReplaceOnUse = PopEmpty,
+		Alcoholic = FALSE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 110,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = zhivchik_can_300,
+		EatType = popcan,
+		WorldStaticModel = zhivchik_can_300_ground,
+	}
+
+	item kvas_taras_white_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Kvas Taras White 0.5l,
+		Icon = kvas_taras_white_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -20,
+		EnduranceChange = 20,
+		ReplaceOnUse = PopEmpty,
+		Alcoholic = FALSE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 110,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = kvas_taras_white_can_500,
+		EatType = popcan,
+		WorldStaticModel = kvas_taras_white_can_500_ground,
+	}
+	item kvas_taras_black_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Kvas Taras Black 0.5l,
+		Icon = kvas_taras_black_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -20,
+		EnduranceChange = 20,
+		ReplaceOnUse = PopEmpty,
+		Alcoholic = FALSE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 110,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = kvas_taras_black_can_500,
+		EatType = popcan,
+		WorldStaticModel = kvas_taras_black_can_500_ground,
+	}
+
+---------  Beers
+	item obolon_light_can_full_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Obolon Light 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = obolon_light_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = obolon_light_can_500,
+		EatType = popcan,
+		WorldStaticModel = obolon_light_can_500_ground,
+	}
+	item obolon_dark_can_full_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Obolon Dark 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = obolon_dark_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = obolon_dark_can_500,
+		EatType = popcan,
+		WorldStaticModel = obolon_dark_can_500_ground,
+	}
+	item 1_bochkove_can_full_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Bochkove 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = 1_bochkove_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = 1_bochkove_can_full_500,
+		EatType = popcan,
+		WorldStaticModel = 1_bochkove_can_full_500_ground,
+	}
+	item arsenal_strong_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Arsenal strong 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = arsenal_strong_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = arsenal_strong_can_500,
+		EatType = popcan,
+		WorldStaticModel = arsenal_strong_can_500_ground,
+	}
+	item chernihivske_0_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Chernihivske non-alcohol 0.5l,
+		//Tooltip = Tooltip_ContainsAlcohol,
+		Icon = chernihivske_0_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = FALSE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = chernihivske_0_can_500,
+		EatType = popcan,
+		WorldStaticModel = chernihivske_0_can_500_ground,
+	}
+	item doms_belgian_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Robert Doms Belgian 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = doms_belgian_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = doms_belgian_can_500,
+		EatType = popcan,
+		WorldStaticModel = doms_belgian_can_500_ground,
+	}
+	item lvivske_light_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Lvivske Light 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = lvivske_light_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = lvivske_light_can_500,
+		EatType = popcan,
+		WorldStaticModel = lvivske_light_can_500_ground,
+	}
+	item opillya_0_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Opillya non-alcohol 0.5l,
+		//Tooltip = Tooltip_ContainsAlcohol,
+		Icon = opillya_0_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = FALSE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = opillya_0_can_500,
+		EatType = popcan,
+		WorldStaticModel = opillya_0_can_500_ground,
+	}
+item opillya_1851_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Opillya 1851 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = opillya_1851_can_500,
+		WWeight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = opillya_1851_can_500,
+		EatType = popcan,
+		WorldStaticModel = opillya_1851_can_500_ground,
+	}
+item opillya_korifey_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Opillya Korifey 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = opillya_korifey_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = opillya_korifey_can_500,
+		EatType = popcan,
+		WorldStaticModel = opillya_korifey_can_500_ground,
+	}
+item rogan_monah_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Rogan Veseliy mohakh 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = rogan_monah_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = rogan_monah_can_500,
+		EatType = popcan,
+		WorldStaticModel = rogan_monah_can_500_ground,
+	}
+item rogan_nonalcohol_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Rogan non-alcohol 0.5l,
+		//Tooltip = Tooltip_ContainsAlcohol,
+		Icon = rogan_nonalcohol_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = FALSE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = rogan_nonalcohol_can_500,
+		EatType = popcan,
+		WorldStaticModel = rogan_nonalcohol_can_500_ground,
+	}
+item rogan_traditional_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Rogan Traditional 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = rogan_traditional_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = rogan_traditional_can_500,
+		EatType = popcan,
+		WorldStaticModel = rogan_traditional_can_500_ground,
+	}
+item ternopilske_lager_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Ternopilske Lager 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = ternopilske_lager_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = ternopilske_lager_can_500,
+		EatType = popcan,
+		WorldStaticModel = ternopilske_lager_can_500_ground,
+	}
+item zakarpatske_light_can_500
+	{
+		DisplayCategory = Food,
+		Type = Food,
+		DisplayName = Beer Zakarpatske Light 0.5l,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Icon = zakarpatske_light_can_500,
+		Weight = 0.5,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -15,
+		ReplaceOnUse = BeerCanEmpty,
+		Alcoholic = TRUE,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromCan,
+		Carbohydrates = 7,
+		Proteins = 0,
+		Lipids = 0,
+		Calories = 250,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		StaticModel = zakarpatske_light_can_500,
+		EatType = popcan,
+		WorldStaticModel = zakarpatske_light_can_500_ground,
+	}	
+
+
+---------  empty cans for future
+-- 	item zhivchik_can_empty_300
+--	{
+--		Weight	= 0.01,
+--		Type = Normal,
+--		DisplayName = Empty can - Zhivchik,
+--		Icon = zhivchik_can_300,
+--		WorldStaticModel = zhivchik_can_300_emptyworld,
+--		MetalValue = 10,
+--	}
+
+
+}

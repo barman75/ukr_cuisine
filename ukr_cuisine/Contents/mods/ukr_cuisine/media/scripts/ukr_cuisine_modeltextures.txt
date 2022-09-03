@@ -1,0 +1,212 @@
+module Base
+{
+  
+  model zhivchik_can_300
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/zhivchik_can_300_modeltexture,
+  }
+  model zhivchik_can_300_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/zhivchik_can_300_modeltexture,
+  }
+
+---------  empty cans for future
+--  model zhivchik_can_300_emptyworld
+--  {
+--    mesh = WorldItems/EmptyPopCan,
+--    texture = WorldItems/zhivchik_can_300_modeltexture,
+--    scale = 0.01,
+--  }
+
+
+  model obolon_light_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/obolon_light_can_500_modeltexture,
+  }
+  model obolon_light_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/obolon_light_can_500_modeltexture,
+  }
+
+  model obolon_dark_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/obolon_dark_can_500_modeltexture,
+  }
+  model obolon_dark_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/obolon_dark_can_500_modeltexture,
+  }
+
+  model 1_bochkove_can_full_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/1_bochkove_can_500_modeltexture,
+  }
+  model 1_bochkove_can_full_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/1_bochkove_can_500_modeltexture,
+  }
+
+  model arsenal_strong_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/arsenal_strong_can_500_modeltexture,
+  }
+  model arsenal_strong_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/arsenal_strong_can_500_modeltexture,
+  }
+
+  model chernihivske_0_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/chernihivske_0_can_500_modeltexture,
+  }
+  model chernihivske_0_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/chernihivske_0_can_500_modeltexture,
+  }
+
+  model doms_belgian_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/doms_belgian_can_500_modeltexture,
+  }
+  model doms_belgian_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/doms_belgian_can_500_modeltexture,
+  }
+
+  model lvivske_light_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/lvivske_light_can_500_modeltexture,
+  }
+  model lvivske_light_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/lvivske_light_can_500_modeltexture,
+  }
+
+  model opillya_0_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/opillya_0_can_500_modeltexture,
+  }
+  model opillya_0_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/opillya_0_can_500_modeltexture,
+  }
+
+  model opillya_1851_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/opillya_1851_can_500_modeltexture,
+  }
+  model opillya_1851_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/opillya_1851_can_500_modeltexture,
+  }
+
+  model opillya_korifey_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/opillya_korifey_can_500_modeltexture,
+  }
+  model opillya_korifey_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/opillya_korifey_can_500_modeltexture,
+  }
+
+  model rogan_monah_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/rogan_monah_can_500_modeltexture,
+  }
+  model rogan_monah_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/rogan_monah_can_500_modeltexture,
+  }
+
+  model rogan_nonalcohol_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/rogan_nonalcohol_can_500_modeltexture,
+  }
+  model rogan_nonalcohol_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/rogan_nonalcohol_can_500_modeltexture,
+  }
+
+  model rogan_traditional_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/rogan_traditional_can_500_modeltexture,
+  }
+  model rogan_traditional_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/rogan_traditional_can_500_modeltexture,
+  }
+
+  model ternopilske_lager_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/ternopilske_lager_can_500_modeltexture,
+  }
+  model ternopilske_lager_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/ternopilske_lager_can_500_modeltexture,
+  }
+
+  model zakarpatske_light_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/zakarpatske_light_can_500_modeltexture,
+  }
+  model zakarpatske_light_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/zakarpatske_light_can_500_modeltexture,
+  }
+
+  model kvas_taras_white_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/kvas_taras_white_can_500_modeltexture,
+  }
+  model kvas_taras_white_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/kvas_taras_white_can_500_modeltexture,
+  }
+
+    model kvas_taras_black_can_500
+  {
+    mesh = PopCanDiet,
+    texture = WorldItems/zkvas_taras_black_can_500_modeltexture,
+  }
+  model kvas_taras_black_can_500_ground
+  {
+      mesh = PopCanRed,
+      texture = WorldItems/kvas_taras_black_can_500_modeltexture,
+  }  
+
+
+}

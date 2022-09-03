@@ -1,0 +1,4 @@
+Tooltip_RU = {
+	Tooltip_ContainsAlcohol = "Містить алкоголь!",
+	Tooltip_EnergyDrink = "Енергетичний напій",
+}

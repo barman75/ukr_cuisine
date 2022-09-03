@@ -1,0 +1,79 @@
+ItemName_UA = {
+
+	ItemName_ukr_cuisine.zhivchik_can_full_300 = "Живчік Яблуко 0.3л",
+	ItemName_ukr_cuisine.zhivchik_can_empty_300 = "Банка з під Живчік 0.3л",
+	ItemName_ukr_cuisine.obolon_light_can_full_500 = "Оболонь Світле 0.5л",
+	ItemName_ukr_cuisine.obolon_light_can_empty_500 = "Банка з під Оболонь 0.5л",
+	ItemName_ukr_cuisine.obolon_dark_can_full_500 = "Оболонь Оксамитове 0.5л",
+	ItemName_ukr_cuisine.obolon_dark_can_empty_500 = "Банка з під Оболонь 0.5л",
+
+	ItemName_ukr_cuisine.kvas_taras_white_can_500 = "Квас Тарас Білий 0.5л",
+	ItemName_ukr_cuisine.kvas_taras_black_can_500 = "Квас Тарас Чорний 0.5л",
+	ItemName_ukr_cuisine.1_bochkove_can_full_500 = "Бочкове (Перша приватна броварня) 0.5л",
+	ItemName_ukr_cuisine.arsenal_strong_can_500 = "Арсенал міцне 0.5л",
+	ItemName_ukr_cuisine.chernihivske_0_can_500 = "Чернігівське Безалкогольне 0.5л",
+	ItemName_ukr_cuisine.doms_belgian_can_500 = "Роберт Домс Бельгійське 0.5л",
+	ItemName_ukr_cuisine.lvivske_light_can_500 = "Львівське Світле 0.5л",
+	ItemName_ukr_cuisine.opillya_0_can_500 = "Опілля Безалкогольне 0.5л",
+	ItemName_ukr_cuisine.opillya_1851_can_500 = "Опілля 1851 0.5л",
+	ItemName_ukr_cuisine.opillya_korifey_can_500 = "Опілля Коріфей 0.5л",
+	ItemName_ukr_cuisine.rogan_monah_can_500 = "Рогань Веселий Монах 0.5л",
+	ItemName_ukr_cuisine.rogan_nonalcohol_can_500 = "Рогань Безалкогольне 0.5л",
+	ItemName_ukr_cuisine.rogan_traditional_can_500 = "Рогань Традиційне 0.5л",
+	ItemName_ukr_cuisine.ternopilske_lager_can_500 = "Тернопільське Лагер 0.5л",
+	ItemName_ukr_cuisine.zakarpatske_light_can_500 = "Закарпатське Оригінальне 0.5л",
+	
+
+	ItemName_ukr_cuisine.UkrCuisineMagazine01 = "Журнал Українська Кухня",
+	ItemName_ukr_cuisine.UkrCuisineMagazine02 = "Бабусин борщ",
+	ItemName_ukr_cuisine.UkrCuisineMagazine03 = "Українські вареники",
+	ItemName_ukr_cuisine.UkrCuisineMagazine04 = "Українські страви",
+
+	ItemName_ukr_cuisine.UkrPotWithMeatWater = "М'ясний бульйон (заготовка)",
+	ItemName_ukr_cuisine.UkrPotMeatBouillonCooked = "М'ясний бульйон (готовий)",
+	ItemName_ukr_cuisine.UkrPotWithFatMeatWater = "Жирний бульйон (заготовка)",
+	ItemName_ukr_cuisine.UkrPotFatMeatBouillonCooked = "Жирний бульйон (готовий)",
+	ItemName_ukr_cuisine.UkrPotWithBoneWater = "Бульйон на кістках (заготовка)",
+	ItemName_ukr_cuisine.UkrPotBoneBouillonCooked = "Бульйон на кістках (готовий)",
+	
+	ItemName_ukr_cuisine.UkrPanWithZasmazhka = "Засмажка на олії (заготовка)",
+	ItemName_ukr_cuisine.UkrPanWithZasmazhkaCooked = "Засмажка на олії (готова)",
+	ItemName_ukr_cuisine.UkrPanWithLardZasmazhka = "Засмажка на салі (заготовка)",
+	ItemName_ukr_cuisine.UkrPanWithLardZasmazhkaCooked = "Засмажка на салі (готова)",
+    ItemName_ukr_cuisine.UkrPanWithOnionBaconZasmazhka = "Засмажка цибуля з салом (заготовка)",
+    ItemName_ukr_cuisine.UkrPanWithOnionBaconZasmazhkaCooked = "Засмажка цибуля з салом (Готова)",
+    
+	
+	ItemName_ukr_cuisine.UkrPotWithSimpleborsch = "Простий борщ (заготовка)",
+	ItemName_ukr_cuisine.UkrPotWithSimpleborschCooked = "Простий борщ (готовий)",
+	ItemName_ukr_cuisine.UkrPotWithVeganborsch = "Пісний борщ з квасолею (заготовка)",
+	ItemName_ukr_cuisine.UkrPotWithVeganborschCooked = "Пісний борщ з квасолею (готовий)",
+	ItemName_ukr_cuisine.UkrPotWithBeansborsch = "Борщ з квасолею (заготовка)",
+	ItemName_ukr_cuisine.UkrPotWithBeansborschCooked = "Борщ з квасолею (готовий)",
+	ItemName_ukr_cuisine.UkrPotWithLardborsch = "Борщ із салом (заготовка)",
+	ItemName_ukr_cuisine.UkrPotWithLardborschCooked = "Борщ із салом (готовий)",
+	ItemName_ukr_cuisine.UkrPotWithCrimeanborsch = "Кримський борщ",
+	ItemName_ukr_cuisine.BowlofBorsch = "Миска борщу",
+
+	ItemName_ukr_cuisine.UkrPotWithBanosh = "Простий банош",
+	ItemName_ukr_cuisine.UkrPotWithSimpleBograch = "Простий бограч",
+
+
+	ItemName_ukr_cuisine.UkrPanWithShkvarki = "Шкварки (заготовка)",
+	ItemName_ukr_cuisine.UkrPanWithShkvarkiCooked = "Шкварки (готові)",
+
+	ItemName_ukr_cuisine.UkrPotatoWithShkvarki = "Картопля зі шкварками",
+    ItemName_ukr_cuisine.UkrPotatoWithOnion = "Картопля з цибулею",
+
+    ItemName_ukr_cuisine.UkrVarenikiPotato = "Каструля Вареників з картоплею",
+    ItemName_ukr_cuisine.UkrVarenikiCherry = "Каструля Вареників з вишнею",
+    ItemName_ukr_cuisine.UkrVarenikiCheese = "Каструля Вареників з сиром",
+
+    ItemName_ukr_cuisine.UkrPotWithUzvar = "Заготовка на узвар",
+    ItemName_ukr_cuisine.UkrPotWithUzvarCooked = "Узвар",
+
+	ItemName_ukr_cuisine.UkrFarmersOmelette = "Яєчня по-селянськи",
+
+
+
+}
