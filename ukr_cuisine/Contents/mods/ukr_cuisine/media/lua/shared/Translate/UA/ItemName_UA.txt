@@ -1,5 +1,44 @@
 ItemName_UA = {
+	ItemName_ukr_cuisine.UACusineCannedBeet = "Консерв.буряк",
+	ItemName_ukr_cuisine.UACusineCannedBeetOpen = "Відкрита банка буряку",
+	ItemName_ukr_cuisine.ChumakCorn = "Консерв. кукурудза Чумак",
+	ItemName_ukr_cuisine.ChumakCornOpen = "Відкрита Кукурудза Чумак",
+	ItemName_ukr_cuisine.VeresPeas = "Консерв. горошок Верес",
+	ItemName_ukr_cuisine.VeresPeasOpen = "Відкритий горошок Верес",
+	ItemName_ukr_cuisine.VeresBeans = "Консерв. квасоля Верес",
+	ItemName_ukr_cuisine.VeresBeansOpen = "Відкрита квасоля Верес",
 
+	ItemName_ukr_cuisine.UACusineSourcream = "Банка сметани",
+	ItemName_ukr_cuisine.UACusineSourcreamOpen = "Відкрита банка сметани",
+
+	ItemName_ukr_cuisine.alco_horticya_500 = "Горілка Хортиця 0.5л",
+	ItemName_ukr_cuisine.alco_hetman_500 = "Горілка Гетьман 0.5л",
+	ItemName_ukr_cuisine.alco_nemiroff_500 = "Горілка Nemiroff 0.5л",
+	ItemName_ukr_cuisine.alco_morosha_500 = "Горілка Мороша 0.5л",
+	ItemName_ukr_cuisine.alco_koktebel_500 = "Коньяк Коктебель 5* 0.5л",
+	ItemName_ukr_cuisine.alco_zakarpatsky_500 = "Коньяк Закарпатський 0.5л",
+	ItemName_ukr_cuisine.alco_desna_500 = "Коньяк Десна 0.5л",
+	ItemName_ukr_cuisine.alco_tysa_500 = "Коньяк Тиса 0.5л",
+	ItemName_ukr_cuisine.alco_spotykach_500 = "Спотикач Козацький 0.5л",
+
+	ItemName_ukr_cuisine.morshinska_500 = "Вода Моршинська 0.5л",
+	ItemName_ukr_cuisine.karpatska_500 = "Вода Карпатська джерельна 0.5л",
+	ItemName_ukr_cuisine.bonaqua_500 = "Вода Бон Аква 0.5л",
+	ItemName_ukr_cuisine.polyana_500 = "Вода Поляна квасова 0.5л",
+	ItemName_ukr_cuisine.myrhorodska_500 = "Вода Миргородська 0.5л",
+	ItemName_ukr_cuisine.zhivchik_apple_500 = "Живчик Яблуко 0.5л",
+	ItemName_ukr_cuisine.briz_500 = "Напій Бріз 0.5л",
+	ItemName_ukr_cuisine.chornobaivka_500 = "Напій Чорнобаївка 0.5л",
+	ItemName_ukr_cuisine.biola_apple_500 = "Напій Біола Яблуко 0.5л",
+
+	ItemName_ukr_cuisine.MivinaPack = "Мівіна зі смаком курки",
+	ItemName_ukr_cuisine.MivinaBowl = "Миска Мівіни",
+	ItemName_ukr_cuisine.MivinaMug = "Кружка Мівіни",
+	ItemName_ukr_cuisine.RoshenChocoBar = "Батончик Рошен",
+	ItemName_ukr_cuisine.ChipsLuxPack = "Чіпси Люкс",
+	ItemName_ukr_cuisine.KozakNutsPack = "Горішки Козацька розвага",
+	ItemName_ukr_cuisine.Perepichka = "Київська перепічка",
+	
 	ItemName_ukr_cuisine.zhivchik_can_full_300 = "Живчік Яблуко 0.3л",
 	ItemName_ukr_cuisine.zhivchik_can_empty_300 = "Банка з під Живчік 0.3л",
 	ItemName_ukr_cuisine.obolon_light_can_full_500 = "Оболонь Світле 0.5л",
@@ -22,7 +61,6 @@ ItemName_UA = {
 	ItemName_ukr_cuisine.rogan_traditional_can_500 = "Рогань Традиційне 0.5л",
 	ItemName_ukr_cuisine.ternopilske_lager_can_500 = "Тернопільське Лагер 0.5л",
 	ItemName_ukr_cuisine.zakarpatske_light_can_500 = "Закарпатське Оригінальне 0.5л",
-	
 
 	ItemName_ukr_cuisine.UkrCuisineMagazine01 = "Журнал Українська Кухня",
 	ItemName_ukr_cuisine.UkrCuisineMagazine02 = "Бабусин борщ",
@@ -43,7 +81,6 @@ ItemName_UA = {
     ItemName_ukr_cuisine.UkrPanWithOnionBaconZasmazhka = "Засмажка цибуля з салом (заготовка)",
     ItemName_ukr_cuisine.UkrPanWithOnionBaconZasmazhkaCooked = "Засмажка цибуля з салом (Готова)",
     
-	
 	ItemName_ukr_cuisine.UkrPotWithSimpleborsch = "Простий борщ (заготовка)",
 	ItemName_ukr_cuisine.UkrPotWithSimpleborschCooked = "Простий борщ (готовий)",
 	ItemName_ukr_cuisine.UkrPotWithVeganborsch = "Пісний борщ з квасолею (заготовка)",

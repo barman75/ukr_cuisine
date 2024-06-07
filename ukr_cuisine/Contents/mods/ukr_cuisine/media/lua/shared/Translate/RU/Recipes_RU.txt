@@ -29,4 +29,13 @@ Prepare Bograch = "Приготувати бограч",
 Prepare Simple Banosh = "Приготувати простий банош",
 
 Prepare Farmers omelette = "Приготувати яєчню по-селянськи",
+
+Open Canned Beet = "Відкрити консерв. буряк",
+Open Sour Cream = "Відкрити банку сметани",
+Make Mivina Mug = "Зробити кружку Мівіни",
+Make Mivina Bowl = "Зробити миску Мівіни",
+Open Veres Peas = "Відкрити Горошок Верес",
+Open Chumak Corn = "Відкрити Кукурудзу Чумак",
+Open Veres Beans = "Відкрити Квасолю Верес",
+
 }

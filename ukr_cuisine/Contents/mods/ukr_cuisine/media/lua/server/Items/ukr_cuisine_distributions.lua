@@ -6,14 +6,6 @@ local i, j, d
 
 -- NON-Alcoholic beverages distribution for ProceduralDistributions.lua
 local myDistTable = {
--- "CrateMechanics", 100, 
--- "CrateTools", 100,
--- "GarageTools", 100,
--- "StoreShelfMechanics", 100,
--- "MechanicShelfTools", 100,
--- "MechanicShelfMisc", 100,
--- "GigamartTools", 100,
--- "GarageMechanic", 100,
 "PoliceLockers", 3,
 "PoliceDesk", 2,
 "FireDeptLockers", 1,
@@ -59,36 +51,82 @@ for i = 1, #myDistTable, 2 do
   table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
   table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.kvas_taras_black_can_500")
   table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.zhivchik_apple_500")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.briz_500")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.chornobaivka_500")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.biola_apple_500")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.myrhorodska_500")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.polyana_500")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.bonaqua_500")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.karpatska_500")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.morshinska_500")
+  table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
 end
 myDistTable = nil
 
+-- HIGH Alcoholic beverages distribution for ProceduralDistributions.lua
+local myDistTable = {
+  "BarCounterLiquor", 10,
+  "KitchenBottles", 2,
+  "MotelFridge", 2,
+  "PlankStashGun", 5,
+  "BarCounterWeapon", 4,
+  "BarShelfLiquor", 10,
+  "DishCabinetGeneric", 1,
+  "DishCabinetLiquor", 4,
+  "DrugShackDrugs", 3,
+  "FoodGourmet", 1,
+  "KitchenBottles", 3,
+  "MechanicShelfMisc", 0.1,
+  "StoreShelfWhiskey", 20,
+  "GigamartBottles", 3,
+  "WhiskeyBottlingFull", 20,
+  "StoreShelfCombo", 0.5,
+  "StoreShelfDrinks", 0.2,
+  "TheatreDrinks", 1,
+  }
+  
+  for i = 1, #myDistTable, 2 do 
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.alco_tysa_500")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.alco_desna_500")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.alco_zakarpatsky_500")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.alco_koktebel_500")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.alco_morosha_500")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.alco_nemiroff_500")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.alco_hetman_500")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.alco_horticya_500")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.alco_spotykach_500")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  end
+
+
 -- Alcoholic beverages distribution for ProceduralDistributions.lua
 local myDistTable = {
--- "PoliceLockers", 100,
--- "PoliceDesk", 100,
--- "FireDeptLockers", 100,
--- "SecurityLockers", 100,
--- "LivingRoomShelfNoTapes", 100,
--- "OfficeDrawers", 100,
--- "ShelfGeneric", 100,
--- "FactoryLockers", 100,
--- "GymLockers", 100,
--- "ClosetShelfGeneric", 100,
   "WardrobeManClassy", 0.1,
--- "WardrobeChild", 100,
   "BandPracticeFridge", 7,
   "BarCounterMisc", 5,
   "BinBar", 7,
   "BinGeneric", 5,
   "CafeteriaDrinks", 2,
--- "ClassroomDesk", 100,
--- "CrateSodaBottles", 100,
--- "CrateSodaCans", 100,
   "FridgeBottles", 2,
   "FridgeBreakRoom", 1,
   "FridgeGeneric", 1,
--- "CrateSodaCans", 100,
--- "FridgeOffice", 100,
   "FridgeRich", 1,
   "FridgeSoda", 5,
   "FridgeTrailerPark", 1,
@@ -99,9 +137,8 @@ local myDistTable = {
   "MotelFridge", 0.5,
   "StoreShelfCombo", 1,
   "StoreShelfDrinks", 2,
-"TheatreDrinks", 2,
+  "TheatreDrinks", 2,
   }
-  
   for i = 1, #myDistTable, 2 do 
     table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.obolon_light_can_full_500")
     table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
@@ -147,7 +184,6 @@ myDistTable = {
   "SurvivalistTruckBed", 1,
   "FossoilTruckBed", 1,
 }
-
 for i = 1, #myDistTable, 2 do  
   table.insert(VehicleDistributions[myDistTable[i]].items, "ukr_cuisine.zhivchik_can_full_300")
   table.insert(VehicleDistributions[myDistTable[i]].items, myDistTable[i+1])
@@ -157,3 +193,79 @@ for i = 1, #myDistTable, 2 do
   table.insert(VehicleDistributions[myDistTable[i]].items, myDistTable[i+1])
 end
 myDistTable = nil
+
+
+-- CANNED_FOOD distribution for ProceduralDistributions.lua
+local myDistTable = {
+  "CrateCannedFood", 10,
+  "GigamartCannedFood", 10,
+  "GroceryStorageCrate1", 10,
+  "GroceryStorageCrate2", 10,
+  "KitchenCannedFood", 10,
+  "ShelfGeneric", 2,
+  "BinGeneric", 1,
+  "StoreShelfCombo", 1,
+  }
+  
+  for i = 1, #myDistTable, 2 do 
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.UACusineCannedBeet")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.ChumakCorn")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.VeresPeas")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  end
+  myDistTable = nil
+
+  -- COLD_FOOD distribution for ProceduralDistributions.lua
+local myDistTable = {
+  "BakeryKitchenFridge", 10,
+  "CafeKitchenFridge", 5,
+  "CrepeKitchenFridge", 3,
+  "FridgeBreakRoom", 1,
+  "FridgeOffice", 1,
+  "FridgeGeneric", 5,
+  "FridgeOther", 5,
+  "FridgeRich", 3,
+  "FridgeSnacks", 1,
+  "FridgeTrailerPark", 3,
+  }
+for i = 1, #myDistTable, 2 do 
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.UACusineSourcream")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  end
+  myDistTable = nil
+
+
+  -- SNACKS distribution for ProceduralDistributions.lua
+local myDistTable = {
+  "GigamartDryGoods", 10,
+  "GroceryStorageCrate1", 5,
+  "KitchenDryFood", 5,
+  "PrisonCellRandom", 10,
+  "ShelfGeneric", 1,
+  }
+  for i = 1, #myDistTable, 2 do 
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.MivinaPack")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.RoshenChocoBar")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.ChipsLuxPack")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.KozakNutsPack")
+    table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+  end
+myDistTable = nil
+
+  -- Food items distribution for ProceduralDistributions.lua
+  local myDistTable = {
+    "BandPracticeFridge", 3,
+    "FridgeBreakRoom", 5,
+    "PizzaKitchenBaking", 1,
+    "ShelfGeneric", 0.01,
+    }
+    for i = 1, #myDistTable, 2 do 
+      table.insert(ProceduralDistributions.list[myDistTable[i]].items, "ukr_cuisine.Perepichka")
+      table.insert(ProceduralDistributions.list[myDistTable[i]].items, myDistTable[i+1])
+    end
+  myDistTable = nil
