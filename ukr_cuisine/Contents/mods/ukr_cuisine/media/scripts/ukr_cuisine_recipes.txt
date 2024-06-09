@@ -48,13 +48,13 @@ item UkrCuisineMagazine04
 	}
 
 
-/* ---------------- Canned Items ------------ */
+/* ---------------- Canned Vegetables ------------ */
 	item UACusineCannedBeet
 	{
 		DisplayName = Canned Beet,
 		DisplayCategory = Food,
 		Type = Food,
-		Weight = 0.8,
+		Weight = 0.5,
 		Icon = CannedChili,
 		CannedFood = TRUE,
 		CantEat = TRUE,
@@ -76,7 +76,7 @@ item UkrCuisineMagazine04
 		Icon = CannedChiliOpen,
 		CannedFood = TRUE,
 		EatType = can,
-		/*EvolvedRecipe = Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12,*/
+		EvolvedRecipe = Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12,
 		/*EvolvedRecipeName = Canned Carrots,*/
 		EvolvedRecipeName = Canned Beet,
 		FoodType = Vegetables,
@@ -86,7 +86,7 @@ item UkrCuisineMagazine04
 		DaysTotallyRotten = 4,
 		HungerChange = -12,
 		ThirstChange = -4,
-		Calories = 15,
+		Calories = 260,
 		Carbohydrates = 28,
 		Lipids = 0,
 		Proteins = 0,
@@ -99,7 +99,7 @@ item UkrCuisineMagazine04
 		DisplayName = Canned Sour Cream,
 		DisplayCategory = Food,
 		Type = Food,
-		Weight = 0.8,
+		Weight = 0.25,
 		Icon = CannedChili,
 		CannedFood = TRUE,
 		CantEat = TRUE,
@@ -117,11 +117,11 @@ item UkrCuisineMagazine04
 		DisplayName = Opened Sour Cream,
 		DisplayCategory = Food,
 		Type = Food,
-		Weight = 0.5,
+		Weight = 0.25,
 		Icon = CannedChiliOpen,
 		CannedFood = TRUE,
 		EatType = can,
-		/*EvolvedRecipe = Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12,*/
+		EvolvedRecipe = Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Salad:6;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12,
 		/*EvolvedRecipeName = Canned Carrots,*/
 		EvolvedRecipeName = Canned Cour Cream,
 		FoodType = Meat,
@@ -131,7 +131,7 @@ item UkrCuisineMagazine04
 		DaysTotallyRotten = 2,
 		HungerChange = -12,
 		ThirstChange = -4,
-		Calories = 15,
+		Calories = 260,
 		Carbohydrates = 28,
 		Lipids = 0,
 		Proteins = 0,
@@ -176,7 +176,7 @@ item UkrCuisineMagazine04
 		DaysTotallyRotten = 4,
 		HungerChange = -16,
 		ThirstChange = -3,
-		Calories = 280,
+		Calories = 260,
 		Carbohydrates = 52.5,
 		Lipids = 0,
 		Proteins = 14,
@@ -274,6 +274,636 @@ item UkrCuisineMagazine04
 		Tags = HasMetal,
 	}
 
+/* ---------------- Canned Meats ------------ */
+	item TushonkaAlan
+	{
+		DisplayName = Canned Alan Beef,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.5,
+		Calories = 1100,
+		Carbohydrates = 0,
+		Lipids = 95,
+		Proteins = 85,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item TushonkaAlanOpen
+	{
+		DisplayName = Opened Alan Canned Beef,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.5,
+		Calories = 1100,
+		Carbohydrates = 0,
+		Lipids = 95,
+		Proteins = 85,		
+		HungerChange = -50,
+		UnhappyChange = -20,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Pizza:12;Burger:12;Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:8;Sandwich Baguette:8;Salad:12;Roasted Vegetables:12;PastaPot:12;PastaPan:12;RicePot:12;RicePan:12,
+		/*EvolvedRecipeName = Canned Corned Beef,*/
+		EvolvedRecipeName = Corned Beef,
+		FoodType = Beef,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item VeresPorkKasha
+	{
+		DisplayName = Veres Pork Kasha,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.5,
+		Calories = 1600,
+		Carbohydrates = 80,
+		Lipids = 125,
+		Proteins = 400,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item VeresPorkKashaOpen
+	{
+		DisplayName = Opened Veres Pork Kasha,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.5,
+		Calories = 1600,
+		Carbohydrates = 80,
+		Lipids = 125,
+		Proteins = 400,	
+		HungerChange = -50,
+		UnhappyChange = -20,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Roasted Vegetables:12,
+		/*EvolvedRecipeName = Canned Corned Beef,*/
+		/*EvolvedRecipeName = Corned Beef,*/
+		FoodType = Beef,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item VeresChili
+	{
+		DisplayName = Veres Chili Con Carne,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.5,
+		Calories = 900,
+		Carbohydrates = 60,
+		Lipids = 66,
+		Proteins = 40,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item VeresChiliOpen
+	{
+		DisplayName = Opened Chili Con Carne,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.5,
+		Calories = 900,
+		Carbohydrates = 60,
+		Lipids = 66,
+		Proteins = 40,
+		HungerChange = -30,
+		UnhappyChange = -15,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:8;Sandwich Baguette:8;Salad:12;Roasted Vegetables:12,
+		/*EvolvedRecipeName = Canned Corned Beef,*/
+		EvolvedRecipeName = Chili,
+		FoodType = Beef,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item ShinkaAlan
+	{
+		DisplayName = Canned Alan Ham,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.5,
+		Calories = 720,
+		Carbohydrates = 0,
+		Lipids = 50,
+		Proteins = 75,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item ShinkaAlanOpen
+	{
+		DisplayName = Opened Alan Ham,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.5,
+		Calories = 720,
+		Carbohydrates = 0,
+		Lipids = 50,
+		Proteins = 75,	
+		HungerChange = -30,
+		UnhappyChange = -10,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Pizza:12;Burger:12;Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:8;Sandwich Baguette:8;Salad:12;Roasted Vegetables:12;PastaPot:12;PastaPan:12;RicePot:12;RicePan:12,
+		/*EvolvedRecipeName = Canned Corned Beef,*/
+		EvolvedRecipeName = Corned Beef,
+		FoodType = Beef,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item SvyninaVerbena
+	{
+		DisplayName = Verbena Corned pork,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.5,
+		Calories = 800,
+		Carbohydrates = 0,
+		Lipids = 60,
+		Proteins = 65,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item SvyninaVerbenaOpen
+	{
+		DisplayName = Opened Verbena Corned pork,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.5,
+		Calories = 800,
+		Carbohydrates = 0,
+		Lipids = 60,
+		Proteins = 65,	
+		HungerChange = -35,
+		UnhappyChange = -15,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Pizza:12;Burger:12;Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:8;Sandwich Baguette:8;Salad:12;Roasted Vegetables:12;PastaPot:12;PastaPan:12;RicePot:12;RicePan:12,
+		EvolvedRecipeName = Corned Beef,
+		FoodType = Beef,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item SnidanokTur
+	{
+		DisplayName = Breakfast for Tourist,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.3,
+		Calories = 450,
+		Carbohydrates = 10,
+		Lipids = 40,
+		Proteins = 50,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item SnidanokTurOpen
+	{
+		DisplayName = Opened Breakfast for Tourist,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.3,
+		Calories = 450,
+		Carbohydrates = 10,
+		Lipids = 40,
+		Proteins = 50,	
+		HungerChange = -15,
+		UnhappyChange = -15,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		FoodType = Fish,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item SosiskyKur
+	{
+		DisplayName = Chicken Sausages,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.5,
+		Calories = 1150,
+		Carbohydrates = 10,
+		Lipids = 100,
+		Proteins = 50,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item SosiskyKurOpen
+	{
+		DisplayName = Opened Chicken Sausages,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.5,
+		Calories = 1150,
+		Carbohydrates = 10,
+		Lipids = 100,
+		Proteins = 50,		
+		HungerChange = -20,
+		UnhappyChange = -10,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Soup:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Roasted Vegetables:20;RicePot:20;RicePan:20;Taco:20;Burrito:20;Omelette:20;Burger:20;Sandwich:20;Sandwich Baguette:20,
+		/*EvolvedRecipeName = Corned Beef,*/
+		FoodType = Meat,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item PashtetOdessa
+	{
+		DisplayName = Canned Odessa pathe,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.5,
+		Calories = 590,
+		Carbohydrates = 0,
+		Lipids = 95,
+		Proteins = 85,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item PashtetOdessaOpen
+	{
+		DisplayName = Opened Odessa pathe,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.3,
+		Calories = 590,
+		Carbohydrates = 24,
+		Lipids = 42,
+		Proteins = 27,		
+		HungerChange = -15,
+		UnhappyChange = -5,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Burger:12;Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:8;Sandwich Baguette:8,
+		FoodType = Meat,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item SmaleztShkvar
+	{
+		DisplayName = Canned Lard with bacon,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.2,
+		Calories = 1600,
+		Carbohydrates = 0,
+		Lipids = 130,
+		Proteins = 76,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item SmaleztShkvarOpen
+	{
+		DisplayName = Opened Lard with bacon,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.2,
+		Calories = 1600,
+		Carbohydrates = 0,
+		Lipids = 130,
+		Proteins = 76,		
+		HungerChange = -50,
+		UnhappyChange = -20,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Burger:12;Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:8;Sandwich Baguette:8;Roasted Vegetables:12;PastaPot:12;PastaPan:12;RicePot:12;RicePan:12,
+		/*EvolvedRecipeName = Canned Corned Beef,*/
+		FoodType = NoExplicit,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item SmaleztTcybul
+	{
+		DisplayName = Canned Lard with onion,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.2,
+		Calories = 1400,
+		Carbohydrates = 0,
+		Lipids = 120,
+		Proteins = 76,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item SmaleztTcybulOpen
+	{
+		DisplayName = Opened Lard with onion,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.2,
+		Calories = 1400,
+		Carbohydrates = 0,
+		Lipids = 120,
+		Proteins = 76,
+		HungerChange = -50,
+		UnhappyChange = -20,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Burger:12;Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:8;Sandwich Baguette:8;Roasted Vegetables:12;PastaPot:12;PastaPan:12;RicePot:12;RicePan:12,
+		/*EvolvedRecipeName = Canned Corned Beef,*/
+		FoodType = NoExplicit,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+	item SaloGarlic
+	{
+		DisplayName = Canned Bacon with garlic,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeef,
+		Type = Food,
+		Weight = 0.2,
+		Calories = 1650,
+		Carbohydrates = 10,
+		Lipids = 180,
+		Proteins = 5,
+		StaticModel = CanClosed,
+		WorldStaticModel = CanClosedCornerBeef,
+		CannedFood = TRUE,
+		CantEat = TRUE,
+		Packaged = TRUE,
+		Tags = HasMetal,
+	}
+	item SaloGarlicOpen
+	{
+		DisplayName = Opened Canned Bacon with garlic,
+		DisplayCategory = Food,
+		Icon = CannedCornedBeefOpen,		
+		Type = Food,
+		Weight = 0.2,
+		Calories = 1650,
+		Carbohydrates = 10,
+		Lipids = 180,
+		Proteins = 5,
+		HungerChange = -50,
+		UnhappyChange = -20,
+		ThirstChange = 5,
+		CannedFood = TRUE,
+		EvolvedRecipe = Burger:12;Omelette:8;Stew:12;Stir fry Griddle Pan:12;Stir fry:12;Sandwich:8;Sandwich Baguette:8;Roasted Vegetables:12;PastaPot:12;PastaPan:12;RicePot:12;RicePan:12,
+		/*EvolvedRecipeName = Canned Corned Beef,*/
+		FoodType = NoExplicit,
+		Packaged = TRUE,
+		ReplaceOnUse = TinCanEmpty,
+		DaysFresh = 3,
+		DaysTotallyRotten = 6,
+		EatType = can,
+		StaticModel = CanOpen,
+		WorldStaticModel = CanOpenCornerBeef,
+		Tags = HasMetal,
+	}
+
+
+/* ------------  CAN RECIPES  ------------------ */
+    recipe Open Alan Canned Beef
+    {
+        TushonkaAlan,
+        Result:TushonkaAlanOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Veres Pork Kasha
+    {
+        VeresPorkKasha,
+        Result:VeresPorkKashaOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Veres Chili Con Carne
+    {
+        VeresChili,
+        Result:VeresChiliOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Veres Zharke
+    {
+        ZharkeVeres,
+        Result:ZharkeVeresOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Alan ham
+    {
+        ShinkaAlan,
+        Result:ShinkaAlanOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Hutorok Mix
+    {
+        ZakHutorok,
+        Result:ZakHutorokOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Verbena Corned pork
+    {
+        SvyninaVerbena,
+        Result:SvyninaVerbenaOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Breakfast for Tourist
+    {
+        SnidanokTur,
+        Result:SnidanokTurOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Chicken Sausages
+    {
+        SosiskyKur,
+        Result:SosiskyKurOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Pathe Odessa
+    {
+        PashtetOdessa,
+        Result:PashtetOdessaOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+    recipe Open Lard with bacon
+    {
+        SmaleztShkvar,
+        Result:SmaleztShkvarOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	    recipe Open Lard with onion
+    {
+        SmaleztTcybul,
+        Result:SmaleztTcybulOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+	    recipe Open Canned Bacon with Garlic
+    {
+        SaloGarlic,
+        Result:SaloGarlicOpen,
+        Time:30.0,
+        //OnCreate:Recipe.OnCreate.OpenCannedFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+    }
+
+
+/* ---------- RECIPES OPEN ----------*/
     recipe Open Canned Beet
     {
         UACusineCannedBeet,
@@ -323,13 +953,15 @@ item UkrCuisineMagazine04
        Sound:OpenCannedFood,
 	}
 
+
+
 /* ---------------- Food items ------------ */
 	item Perepichka
 	{
 		DisplayName = Kyivska Perepichka,
 		DisplayCategory = Food,
 		Type = Food,
-		Weight = 0.3,
+		Weight = 0.2,
 		Icon = Baguette,
 		EvolvedRecipe = Soup:20;Stew:20;Stir fry Griddle Pan:20;Stir fry:20;Roasted Vegetables:20;RicePot:20;RicePan:20;Taco:20;Burrito:20;Omelette:20;Burger:20;Sandwich:20;Sandwich Baguette:20,
 		FoodType = Meat,
@@ -337,7 +969,7 @@ item UkrCuisineMagazine04
 		DaysFresh = 2,
 		DaysTotallyRotten = 5,
 		HungerChange = -20,
-		Calories = 100,
+		Calories = 500,
 		Carbohydrates = 2,
 		Lipids = 12,
 		Proteins = 2,
@@ -359,7 +991,7 @@ item UkrCuisineMagazine04
 		HungerChange = -10,
 		ThirstChange = 40,
 		UnhappyChange = 20,
-		Calories = 52,
+		Calories = 150,
 		Carbohydrates = 0,
 		Lipids = 14,
 		Proteins = 10,
@@ -384,7 +1016,7 @@ item UkrCuisineMagazine04
 		DaysTotallyRotten = 3,
 		HungerChange = -10,
 		UnhappyChange = -20,
-		Calories = 52,
+		Calories = 150,
 		Carbohydrates = 0,
 		Lipids = 14,
 		Proteins = 10,
@@ -396,12 +1028,12 @@ item UkrCuisineMagazine04
 		DisplayName = Rochen candy Bar,
 		DisplayCategory = Food,
 		Type = Food,
-		Weight = 0.2,
+		Weight = 0.1,
 		Icon = GranolaBar,
 		/*DaysFresh = 40,
 		DaysTotallyRotten = 80,*/
 		HungerChange = -18,
-		Calories = 270,
+		Calories = 550,
 		Carbohydrates = 120,
 		Lipids = 44,
 		Proteins = 20,
@@ -412,7 +1044,7 @@ item UkrCuisineMagazine04
 		DisplayName = Luks potato chips,
 		DisplayCategory = Food,
 		Type = Food,
-		Weight = 0.2,
+		Weight = 0.15,
 		Icon = Crisps,
 		CantBeFrozen = TRUE,
 		Packaged = TRUE,
@@ -435,7 +1067,7 @@ item UkrCuisineMagazine04
 		EvolvedRecipe = Soup:8;Stir fry Griddle Pan:8;Stir fry:8;Salad:4;RicePot:8;RicePan:8;ConeIcecream:4,
 		FoodType = Nut,
 		HungerChange = -8,
-		Calories = 161,
+		Calories = 320,
 		Carbohydrates = 4.57,
 		Lipids = 13.96,
 		Proteins = 7.31,
@@ -708,7 +1340,7 @@ item UkrPanWithZasmazhka
 	DisplayName = Zasmazhka (Uncooked),
 	Icon = Pan,
 	Weight = 1,
-	Calories = 200,
+	Calories = 350,
 	DaysFresh = 3,
 	DaysTotallyRotten = 5,
 	EatType	= 2hand,
@@ -737,7 +1369,7 @@ item UkrPanWithLardZasmazhka
 	DisplayName = Zasmazhka with lard (Uncooked),
 	Icon = Pan,
 	Weight = 1,
-	Calories = 200,
+	Calories = 350,
 	DaysFresh = 3,
 	DaysTotallyRotten = 5,
 	EatType	= 2hand,
@@ -764,7 +1396,7 @@ item UkrPanWithOnionBaconZasmazhka
 	DisplayName = Zasmazhka onion (Uncooked),
 	Icon = Pan,
 	Weight = 1,
-	Calories = 200,
+	Calories = 480,
 	DaysFresh = 3,
 	DaysTotallyRotten = 5,
 	EatType	= 2hand,
@@ -791,7 +1423,7 @@ item UkrPanWithOnionBaconZasmazhkaCooked
 	DisplayName = Zasmazhka Onion (Cooked),
 	Icon = Pan,
 	Weight = 1,
-	Calories = 200,
+	Calories = 480,
 	DaysFresh = 3,
 	DaysTotallyRotten = 5,
 	EatType	= 2hand,
@@ -814,7 +1446,7 @@ item UkrPanWithZasmazhkaCooked
 	DisplayName = Zasmazhka (Cooked),
 	Icon 	= Pan,
 	Weight	= 1,
-	Calories = 200,
+	Calories = 480,
 	DaysFresh = 3,
 	DaysTotallyRotten = 5,
 	EatType	= 2hand,
@@ -836,7 +1468,7 @@ item UkrPanWithLardZasmazhkaCooked
 	DisplayName = Zasmazhka with lard (Cooked),
 	Icon 	= Pan,
 	Weight	= 1,
-	Calories = 400,
+	Calories = 480,
 	DaysFresh = 3,
 	DaysTotallyRotten = 5,
 	EatType	= 2hand,
@@ -874,10 +1506,10 @@ item UkrPanWithShkvarki
 	DisplayName = Shkvarki (Uncooked),
 	Icon 	= Pan,
 	Weight	= 0.3,
-	//Carbohydrates = 50,
-	//Proteins = 25,
-	//Lipids = 200,
-	Calories = 400,
+	Carbohydrates = 10,
+	Proteins = 25,
+	Lipids = 200,
+	Calories = 850,
 	DaysFresh = 3,
 	DaysTotallyRotten = 5,
 	EatType	= 2hand,
@@ -903,10 +1535,10 @@ item UkrPanWithShkvarkiCooked
 	DisplayName = Shkvarki (Cooked),
 	Icon 	= Pan,
 	Weight	= 0.3,
-	//Carbohydrates = 50,
-	//Proteins = 25,
-	//Lipids = 200,
-	Calories = 400,
+	Carbohydrates = 10,
+	Proteins = 25,
+	Lipids = 200,
+	Calories = 850,
 	DaysFresh = 3,
 	DaysTotallyRotten = 5,
 	EatType	= 2hand,
@@ -923,16 +1555,45 @@ item UkrPanWithShkvarkiCooked
 
 
 
----------  Borsch
+/* ---------- RECIPES SOUPS ----------*/	
+
+recipe Prepare fast soup
+	{
+		keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+		Potato/CannedPotato/CannedPotatoOpen/Cabbage/CannedPeas/Corn/CannedCorn/CannedPeas/UACusineCannedBeet/VeresPeas/ChumakCorn/VeresBeans/VeresChili/TinnedBeans,
+		Onion/OnionRings/Carrots/CannedCarrotsOpen/Tomato/TomatoPaste/CannedTomatoOpen,
+		Result:UkrPotWithFastSoup,
+		Time:50.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		SkillRequired:Cooking=0,
+		NeedToBeLearn: false,
+		CanBeDoneFromFloor: true,
+       	Sound:OpenCannedFood,
+	}
+recipe Prepare fat soup
+	{
+		keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
+		Potato/CannedPotato/CannedPotatoOpen,
+		Cabbage/CannedCarrots2/CannedPeas/Corn/CannedCorn/CannedPeas/UACusineCannedBeet/VeresPeas/ChumakCorn/VeresBeans/VeresChili/TinnedBeans,
+		OilVegetable/OilOlive/UkrPanWithZasmazhkaCooked/UkrPotMeatBouillonCooked/UkrPotBoneBouillonCooked/SmaleztTcybul/SmaleztShkvar,
+		Result:UkrPotWithFatSoup,
+		Time:70.0,
+		Category:Cooking,
+		OnGiveXP:Recipe.OnGiveXP.Cooking10,
+		SkillRequired:Cooking=0,
+		NeedToBeLearn: false,
+		CanBeDoneFromFloor: true,
+       	Sound:OpenCannedFood,
+	}
 
 recipe Prepare Simple Borsch
   {
 	keep ButterKnife/BreadKnife/FlintKnife/HuntingKnife/KitchenKnife/MeatCleaver,
 	Cabbage,
-	Potato,
+	Potato/CannedPotatoOpen,
 	UkrPanWithZasmazhkaCooked,
 	UkrPotMeatBouillonCooked/UkrPotBoneBouillonCooked,
-	Salt,
 	Result:UkrPotWithSimpleborsch,
 	Time:10.0,
 	Category:Cooking,
@@ -950,7 +1611,6 @@ recipe Prepare Vegan Borsch
 	Potato/CannedPotatoOpen,
 	OpenBeans/VeresBeansOpen,
 	UkrPanWithZasmazhkaCooked,
-	Salt,
 	Result:UkrPotWithVeganborsch,
 	Time:10.0,
 	Category:Cooking,
@@ -967,7 +1627,6 @@ recipe Prepare Fat Borsch
 	Potato/CannedPotatoOpen,
 	UkrPanWithLardZasmazhkaCooked,
 	UkrPotMeatBouillonCooked,
-	Salt,
 	Result:UkrPotWithLardborsch,
 	Time:10.0,
 	Category:Cooking,
@@ -989,7 +1648,6 @@ recipe Prepare Crimean Borsch
 	Carrots/CannedCarrotsOpen,
 	Cabbage,
 	Potato/CannedPotatoOpen,
-	Salt,
 	Result:UkrPotWithCrimeanborsch,
 	Time:10.0,
 	Category:Cooking,
@@ -998,6 +1656,120 @@ recipe Prepare Crimean Borsch
 	NeedToBeLearn: false,
 	CanBeDoneFromFloor: true,
   }
+
+
+/*------------- ITEMS SOUP -----------*/
+item UkrPotWithFastSoup
+	{
+		DisplayCategory = Food,
+		Weight 	= 3,
+		Type = Food,
+		DisplayName = Simple Fast Soup (Uncooked),
+		Icon = Pot,
+		Calories = 550,
+		ReplaceOnUse = Pot,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		GoodHot	= true,
+		HungerChange = -30,
+		ThirstChange = -30,
+		UnhappyChange = -10,
+		StressChange = 0,
+		BoredomChange = -10,
+		FatigueChange = -10,
+		CookingSound = FryingFood,
+		IsCookable = true,
+		MinutesToCook = 30,
+		MinutesToBurn = 200,
+		ReplaceOnCooked	= ukr_cuisine.UkrPotWithFastSoupCooked
+	}
+	item UkrPotWithFastSoupCooked
+		{
+		DisplayCategory = Food,
+		Weight 	= 3,
+		Type = Food,
+		DisplayName = Simple Fast Soup (Cooked),
+		Icon = Pot,
+		Calories = 550,
+		ReplaceOnUse = Pot,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		GoodHot	= true,
+		HungerChange = -80,
+		ThirstChange = -60,
+		UnhappyChange = -60,
+		StressChange = -60,
+		BoredomChange = -30,
+		FatigueChange = -30,
+	}
+item UkrPotWithFatSoup
+	{
+		DisplayCategory = Food,
+		Weight 	= 3,
+		Type = Food,
+		DisplayName = Simple Fast Soup (Uncooked),
+		Icon = Pot,
+		Calories = 800,
+		ReplaceOnUse = Pot,
+		DaysFresh = 2,
+		DaysTotallyRotten = 3,
+		GoodHot	= true,
+		HungerChange = -30,
+		ThirstChange = -30,
+		UnhappyChange = -10,
+		StressChange = 0,
+		BoredomChange = -10,
+		FatigueChange = -10,
+		CookingSound = FryingFood,
+		IsCookable = true,
+		MinutesToCook = 30,
+		MinutesToBurn = 200,
+		ReplaceOnCooked	= ukr_cuisine.UkrPotWithFastSoupCooked
+	}
+	item UkrPotWithFatSoupCooked
+		{
+		DisplayCategory = Food,
+		Weight 	= 3,
+		Type = Food,
+		DisplayName = Simple Fast Soup (Cooked),
+		Icon = Pot,
+		Calories = 800,
+		ReplaceOnUse = Pot,
+		DaysFresh = 2,
+		DaysTotallyRotten = 4,
+		GoodHot	= true,
+		HungerChange = -80,
+		ThirstChange = -60,
+		UnhappyChange = -60,
+		StressChange = -60,
+		BoredomChange = -30,
+		FatigueChange = -30,
+	}	
+
+item UkrPotWithSimpleborsch
+	{
+	DisplayCategory = Food,
+	Weight 	= 3,
+	Type = Food,
+	DisplayName = Simple Ukrainian Borsch (Uncooked),
+	Icon = Pot,
+	Calories = 660,
+	ReplaceOnUse = Pot,
+	DaysFresh 	= 3,
+	DaysTotallyRotten = 6,
+	GoodHot	= true,
+	HungerChange = -30,
+	ThirstChange = -30,
+	UnhappyChange = -10,
+	StressChange = 0,
+	BoredomChange = -10,
+	FatigueChange = -10,
+	CookingSound = FryingFood,
+	IsCookable = true,
+	MinutesToCook = 30,
+	MinutesToBurn = 200,
+	ReplaceOnCooked	= ukr_cuisine.UkrPotWithSimpleborschCooked
+	}
 
 item UkrPotWithSimpleborsch
 	{
@@ -2039,10 +2811,195 @@ item zakarpatske_light_can_500
 		StaticModel = zakarpatske_light_can_500,
 		EatType = popcan,
 		WorldStaticModel = zakarpatske_light_can_500_ground,
+	}
+
+/*------------ ENERGY DRINKS  ---------------- */	
+	item EnergetykVolya
+	{
+		DisplayCategory = Food,
+		DisplayName	= Volya Energy Drink,
+		StaticModel = zakarpatske_light_can_500,
+        WorldStaticModel = zakarpatske_light_can_500_ground,
+		ReplaceOnUse = BeerCanEmpty,
+		Icon = zakarpatske_light_can_500,
+		Type = Food,
+		EatType = popcan,
+		Weight = 0.25,
+		HungerChange = -8,
+		ThirstChange = -50,
+		UnhappyChange = -15,
+		EnduranceChange	= 30,
+        FatigueChange =	-40,
+        Carbohydrates = 36,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 180,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		CustomContextMenu =	Drink,
+		CustomEatSound = DrinkingFromCan,
+		AlwaysWelcomeGift = TRUE,
+	}
+	item EnergetykMonster
+	{
+		DisplayCategory = Food,
+		DisplayName	= Monster Energy Drink,
+		StaticModel = zakarpatske_light_can_500,
+        WorldStaticModel = zakarpatske_light_can_500_ground,
+		ReplaceOnUse = BeerCanEmpty,
+		Icon = zakarpatske_light_can_500,
+		Type = Food,
+		EatType = popcan,
+		Weight = 0.25,
+		HungerChange = -8,
+		ThirstChange = -50,
+		UnhappyChange = -15,
+		EnduranceChange	= 30,
+        FatigueChange =	-40,
+        Carbohydrates = 36,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 180,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		CustomContextMenu =	Drink,
+		CustomEatSound = DrinkingFromCan,
+		AlwaysWelcomeGift = TRUE,
+	}
+	item EnergetykStalker
+	{
+		DisplayCategory = Food,
+		DisplayName	= S.T.A.L.K.E.R Energy Drink,
+		StaticModel = zakarpatske_light_can_500,
+        WorldStaticModel = zakarpatske_light_can_500_ground,
+		ReplaceOnUse = BeerCanEmpty,
+		Icon = zakarpatske_light_can_500,
+		Type = Food,
+		EatType = popcan,
+		Weight = 0.25,
+		HungerChange = -8,
+		ThirstChange = -50,
+		UnhappyChange = -15,
+		EnduranceChange	= 30,
+        FatigueChange =	-40,
+        Carbohydrates = 36,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 180,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		CustomContextMenu =	Drink,
+		CustomEatSound = DrinkingFromCan,
+		AlwaysWelcomeGift = TRUE,
 	}	
+	item EnergetykBlackenergy
+	{
+		DisplayCategory = Food,
+		DisplayName	= Black Energy Drink,
+		StaticModel = zakarpatske_light_can_500,
+        WorldStaticModel = zakarpatske_light_can_500_ground,
+		ReplaceOnUse = BeerCanEmpty,
+		Icon = zakarpatske_light_can_500,
+		Type = Food,
+		EatType = popcan,
+		Weight = 0.3,
+		HungerChange = -8,
+		ThirstChange = -50,
+		UnhappyChange = -15,
+		EnduranceChange	= 30,
+        FatigueChange =	-40,
+        Carbohydrates = 36,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 180,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		CustomContextMenu =	Drink,
+		CustomEatSound = DrinkingFromCan,
+		AlwaysWelcomeGift = TRUE,
+	}
+	item EnergetykNonstop_250
+	{
+		DisplayCategory = Food,
+		DisplayName	= Non Stop Energy Drink,
+		StaticModel = zakarpatske_light_can_500,
+        WorldStaticModel = zakarpatske_light_can_500_ground,
+		ReplaceOnUse = BeerCanEmpty,
+		Icon = zakarpatske_light_can_500,
+		Type = Food,
+		EatType = popcan,
+		Weight = 0.25,
+		HungerChange = -8,
+		ThirstChange = -50,
+		UnhappyChange = -15,
+		EnduranceChange	= 30,
+        FatigueChange =	-40,
+        Carbohydrates = 36,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 180,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		CustomContextMenu =	Drink,
+		CustomEatSound = DrinkingFromCan,
+		AlwaysWelcomeGift = TRUE,
+	}
+	item EnergetykHell_250
+	{
+		DisplayCategory = Food,
+		DisplayName	= Hell Energy Drink,
+		StaticModel = zakarpatske_light_can_500,
+        WorldStaticModel = zakarpatske_light_can_500_ground,
+		ReplaceOnUse = BeerCanEmpty,
+		Icon = zakarpatske_light_can_500,
+		Type = Food,
+		EatType = popcan,
+		Weight = 0.25,
+		HungerChange = -8,
+		ThirstChange = -50,
+		UnhappyChange = -15,
+		EnduranceChange	= 30,
+        FatigueChange =	-40,
+        Carbohydrates = 36,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 180,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		CustomContextMenu =	Drink,
+		CustomEatSound = DrinkingFromCan,
+		AlwaysWelcomeGift = TRUE,
+	}
+	item EnergetykRevo_250
+	{
+		DisplayCategory = Food,
+		DisplayName	= Hell Energy Drink,
+		StaticModel = zakarpatske_light_can_500,
+        WorldStaticModel = zakarpatske_light_can_500_ground,
+		ReplaceOnUse = BeerCanEmpty,
+		Icon = zakarpatske_light_can_500,
+		Type = Food,
+		EatType = popcan,
+		Weight = 0.25,
+		HungerChange = -8,
+		UnhappyChange = -20,
+		ThirstChange = -50,
+		EnduranceChange	= 30,
+        FatigueChange =	-40,
+        Carbohydrates = 36,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 350,
+		Alcoholic = TRUE,
+		Tooltip = Tooltip_ContainsAlcohol,
+		Packaged = TRUE,
+		CantBeFrozen = TRUE,
+		CustomContextMenu =	Drink,
+		CustomEatSound = DrinkingFromCan,
+		AlwaysWelcomeGift = TRUE,
+	}
 
 /*------------ WATERS ---------------- */
-
 	item morshinska_500
 	{
 		DisplayName = Morshinska Water Bottle,
@@ -2246,7 +3203,6 @@ item chornobaivka_500
 	}
 
 /*------------ LIQUORS ---------------- */
-
 	item alco_horticya_500
 	{
 		DisplayName = Horilka Hortycia 0.5l,

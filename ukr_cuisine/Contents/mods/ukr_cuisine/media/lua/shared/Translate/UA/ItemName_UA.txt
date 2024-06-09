@@ -8,6 +8,30 @@ ItemName_UA = {
 	ItemName_ukr_cuisine.VeresBeans = "Консерв. квасоля Верес",
 	ItemName_ukr_cuisine.VeresBeansOpen = "Відкрита квасоля Верес",
 
+
+	ItemName_ukr_cuisine.TushonkaAlan = "Яловичина тушкована Алан",
+	ItemName_ukr_cuisine.TushonkaAlanOpen = "Відкр. Яловичина тушкована Алан",
+	ItemName_ukr_cuisine.VeresPorkKasha = "Каша зі свининою Верес",
+	ItemName_ukr_cuisine.VeresPorkKashaOpen = "Відкр. каша зі свининою Верес",
+	ItemName_ukr_cuisine.VeresChili = "Чілі Кон Карне Верес",
+	ItemName_ukr_cuisine.VeresChiliOpen = "Відкр. Чілі Кон Карне Верес",
+	ItemName_ukr_cuisine.ShinkaAlan = "Консерв. Шинка Алан",
+	ItemName_ukr_cuisine.ShinkaAlanOpen = "Відкр. Шинка Алан",
+	ItemName_ukr_cuisine.SvyninaVerbena = "Свинина тушкована Вербена",
+	ItemName_ukr_cuisine.SvyninaVerbenaOpen = "Відкр. Свинина тушкована Вербена",
+	ItemName_ukr_cuisine.SnidanokTur = "Консерв. Сніданок туриста",
+	ItemName_ukr_cuisine.SnidanokTurOpen = "Відкр. Сніданок туриста",
+	ItemName_ukr_cuisine.SosiskyKur = "Консерв. Сосиски курячі",
+	ItemName_ukr_cuisine.SosiskyKurOpen = "Відкр. Сосиски курячі",
+	ItemName_ukr_cuisine.PashtetOdessa = "Консерв. Паштет Одеський",
+	ItemName_ukr_cuisine.PashtetOdessaOpen = "Відкр. Паштет Одеський",
+	ItemName_ukr_cuisine.SmaleztShkvar = "Консерв. Cмалець зі шкварками",
+	ItemName_ukr_cuisine.SmaleztShkvarOpen = "Відкр. Cмалець зі шкварками",
+	ItemName_ukr_cuisine.SmaleztTcybul = "Консерв. Cмалець з цибулею",
+	ItemName_ukr_cuisine.SmaleztTcybulOpen = "Відкр. Cмалець з цибулею",
+	ItemName_ukr_cuisine.SaloGarlic = "Консерв. Сало мелене з часником",
+	ItemName_ukr_cuisine.SaloGarlicOpen = "Відкр. Сало мелене з часником",
+
 	ItemName_ukr_cuisine.UACusineSourcream = "Банка сметани",
 	ItemName_ukr_cuisine.UACusineSourcreamOpen = "Відкрита банка сметани",
 
@@ -108,9 +132,20 @@ ItemName_UA = {
 
     ItemName_ukr_cuisine.UkrPotWithUzvar = "Заготовка на узвар",
     ItemName_ukr_cuisine.UkrPotWithUzvarCooked = "Узвар",
-
 	ItemName_ukr_cuisine.UkrFarmersOmelette = "Яєчня по-селянськи",
 
 
+	ItemName_ukr_cuisine.EnergetykVolya = "Енергетик Воля",
+	ItemName_ukr_cuisine.EnergetykMonster = "Енергетик Monster",
+	ItemName_ukr_cuisine.EnergetykStalker = "Енергетик S.T.A.L.K.E.R",
+	ItemName_ukr_cuisine.EnergetykBlackenergy = "Енергетик Black Energy",
+	ItemName_ukr_cuisine.EnergetykNonstop_250 = "Енергетик Non Stop",
+	ItemName_ukr_cuisine.EnergetykHell_250 = "Енергетик Hell",
+	ItemName_ukr_cuisine.EnergetykRevo_250 = "Енергетик Revo",
+
+	ItemName_ukr_cuisine.UkrPotWithFastSoup = "Супчик по-шустрячку (заготовка)",
+	ItemName_ukr_cuisine.UkrPotWithFatSoup = "Супчик жирненький (заготовка)",
+	ItemName_ukr_cuisine.UkrPotWithFastSoupCooked = "Супчик по-шустрячку (готовий)",
+	ItemName_ukr_cuisine.UkrPotWithFatSoupCooked = "Супчик жирненький (готовий)",
 
 }
